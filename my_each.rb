@@ -8,7 +8,10 @@ def my_each(collection)
     while i < array.length
     yield(collection)
     i = i + 1
+    
   end
+  
     puts i
+    
   end
   
