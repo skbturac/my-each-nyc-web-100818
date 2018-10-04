@@ -1,17 +1,17 @@
-def my_each(collection) 
+def my_each(array) 
   # put argument(s) here
   # code here
   
-  collection == [1, 2, 3, 4]
-  
-  i = 0
-    while i < array.length
-    yield(collection)
-    i = i + 1
+    if block_given?
+    i = 0 
+      while i < array.length 
+        yield (array[i])
+    i = i +  1
+      end
+    array 
+  else
     
   end
-  
-    puts i
     
   end
   
